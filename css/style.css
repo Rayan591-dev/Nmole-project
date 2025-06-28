@@ -1,0 +1,276 @@
+/*start varibles*/
+:root {
+    ---content-secondery: #2A8ECD;
+    ---content-primary:#345F7C;
+    ---background-accent:#A8C6E5;
+    ---btn-color:#CD712A;
+    ---padding-section-top: 120px;
+    ---padding-section-bottom: 120px;
+}
+
+:host,
+:root {
+    --fa-style-family-classic: "Font Awesome 6 Free";
+    --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
+}
+
+/*end varibles*/
+/*start globle rules*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(---background-accent);
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--content-primary);
+
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*small*/
+@media (min-width: 767px) {
+    .container {
+        width: 750px;
+
+    }
+}
+
+/*medium*/
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/*large*/
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/*navbar*/
+nav.navbar{padding-bottom: 26px;
+padding-top: 26px;}
+.navbar .offcanvas-body ul.navbar-nav li a {color :black}
+.navbar .offcanvas-body ul.avbar-nav{display: flex; justify-content: start;} 
+.navbar .offcanvas-body .log{left: 50%;}
+.navbar .offcanvas-body .log img,.navbar .offcanvas-title img{
+width: 103px;
+height: 78px;
+}
+a.btn-1{ background-color: var(---btn-color);
+color: white; border-radius: 8px; border: none; padding: 8px 37px;}
+@media (max-width: 992px) {
+ .navbar .offcanvas-body  a.btn-1,.navbar .offcanvas-body .log{display: none;}
+ .navbar .offcanvas-body ul.navbar-nav {display: flex; justify-content: center;}
+.modal{display: block;}
+
+
+}
+/*end navbar*/
+/*lannding*/
+.lannding{
+    padding-top: var(---padding-section-top);
+    padding-bottom: var(---padding-section-bottom);
+    background-image: url(../img/Landing-photo.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+.lannding::before{position: absolute; content: "";
+width: 100%;
+height: 100%;
+left: 0;
+top: 0;
+background-color: rgba(0, 0, 0, 0.31);
+z-index: -1;}
+.lannding .content .farm-inf a.btn-2{
+    border: 2px solid var(---content-primary);
+    border-radius: 8px;
+    padding: 8px 46px;
+    color: white;
+}
+@media (max-width: 767px) {
+   .lannding .content .farm-inf a.btn-2{ padding: 8px 18px;}
+}
+
+/*landing end*/
+/*about us*/
+.about-us{
+    padding-top: var(---padding-section-top);
+    padding-bottom: var(---padding-section-bottom);
+    position: relative;
+    z-index: 1;
+}
+.about-us .line svg {position: absolute;
+z-index: -1; 
+width: 100%;
+top: -2%; 
+}
+.about-us .cont .imge img{/*width: 487px;
+height: 442;*/ width: 100%;}
+.about-us .cont .txt-inf{background-color: #F0F4FF;
+margin-left: -40px;}
+.about-us .cont .txt-inf p{font-size: 14px;line-height: 1.4;}
+.about-us .cont .txt-inf a.btn-3{
+    color: #ffff;
+    font-weight: 500;
+    padding: 10px 37px;
+    background-color: var(---content-primary);
+    border-radius: 8px;
+}
+@media (max-width: 767px) {
+   .about-us .cont .txt-inf{margin: auto; margin-left: 0px;}  
+}
+
+/*end About-us*/
+/*Committees*/
+  .committes{padding-top: 120px;padding-bottom: 120px;}
+  .committes  .imges{max-height: 350px; max-width: 250px;}
+  .committes  .imges img{width: 100%; border-radius: 350px;}
+    .committes .coulmn a{color: black;}
+  .committes .coulmn .text{left: 8%;
+  bottom: 20%;}
+  .committes .coulmn .text p {background-color: rgba(255, 255, 255, 0.67);}
+@media (max-width: 767px) {
+   .committes .non-techinical .coulmn .text{left:10%;
+  bottom: 20%;} 
+}
+/*Join-us*/
+.Join-us{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: var(---background-accent);
+}
+.Join-us .btn-join{margin-left: 24%; padding: 12px 80px;}
+@media (max-width: 767px) {
+    .Join-us .btn-join{margin-left: 50%; padding: 12px 60px;}
+
+    
+}
+/*Why-Join-us*/
+.Why-Join-us{
+    padding-top: var(---padding-section-top);
+    padding-bottom: var(---padding-section-bottom);
+}
+
+  .Why-Join-us .cont {margin-top: 45px;}
+.Why-Join-us .cont  .svg  .box{ position: absolute;
+left: 22%;
+bottom: -60%;}
+.Why-Join-us .cont  .svg  .num .counter{font-weight: bold; font-size: 30px;}
+
+/*Testimonials*/
+.Testimonial{
+       padding-top: 40px;
+    padding-bottom: var(---padding-section-bottom); 
+position: relative;}
+ .mySwiper{ padding-top: 20px; padding-bottom: 120px}
+   .swiper{position: relative;}
+   .swiper .swip .swiper-button-next ,.swiper-button-prev{
+  position: absolute;
+  top: 74%; color: rgba(0, 0, 0, 0.647);}
+  .swiper .swip .swiper-button-next ,.swiper-button-prev:hover{
+  color: black;}
+.swiper .card .imges img {width: 30px; position: relative;}
+.card {max-height: 150px; width:100%; background-color: #00000010; border: none; border-radius: 6px; } 
+.swiper .icon img {width: 15px; height: 15px;  }
+
+/*Featured Projects*/
+.Featured-Projects{
+
+    padding-bottom: var(---padding-section-bottom);
+}
+.Featured-Projects h4{color: var(---content-primary);}
+.Featured-Projects .col-4 .images{height: 340px; width: 343px;}
+.Featured-Projects .col-4 img{width: 85%; height: 100%;}
+.Featured-Projects .col-4 .box1{z-index: 11;}
+.Featured-Projects .col-4 .box2{position: absolute;
+  top: 69px;
+  left: 92px;
+  z-index: 10;}
+.Featured-Projects .col-4 .box3{position: absolute;
+  top: 35px;
+  left: 41px;
+  z-index: 1;}
+.Featured-Projects .row-2{margin-top: 12%;}
+.Featured-Projects .col-lg-5{margin-top: 10%}
+@media (max-width: 992px) {
+    .Featured-Projects .col-lg-5{margin-top: 20%}
+.Featured-Projects .row-2 .col-4{margin-top: 10%; }
+}
+a.more{text-decoration: none; color: rgba(0, 0, 0, 0.62);}
+ .Featured-Projects a.btn-3{
+    color: #ffff;
+    font-weight: 500;
+    padding: 10px 37px;
+    background-color: #345F7C;
+    border-radius: 8px;   
+}
+/*MIR Competition*/
+.MIR-Competition{
+    padding-top: 60px;
+    padding-bottom:60px;
+    background-color: var(---background-accent);
+}
+.MIR-Competition .imges img{width: 100px; height: 100px;}
+/*Upcoming Events*/
+.Upcoming-Events{
+    padding-top: var(---padding-section-top);
+    padding-bottom: var(---padding-section-bottom);
+}
+.Upcoming-Events .cont .box{text-align: center;}
+.Upcoming-Events .cont .box .icon{width: 70px; height: 70px; border-radius: 50%; background-color: rgba(0, 0, 0, 0.136)}
+.Upcoming-Events .cont .box .icon i{width: 15px;}
+.Upcoming-Events a.btn-3{
+    color: #ffff;
+    font-weight: 500;
+    padding: 10px 37px;
+    background-color: #345F7C;
+    border-radius: 8px;
+}

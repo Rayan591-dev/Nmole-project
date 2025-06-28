@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N mole</title>
+    <!--icon-->
+    <link rel="icon" href="./img/NMOLE LOGO.png">
+    <!--bootstap-->
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <!--render all elments normally-->
+    <link rel="stylesheet" href="css/normaliz.css">
+        <!--swiper css-->
+<link rel="stylesheet" href="./css/swiper-bundle.min.css">
+<!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!--main file of css-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--main file of js-->
+    <script src="./js/main.js"></script>
+    <!--font awessome-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!--google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <script src="bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+  <!--navbar section-->
+        <nav class="navbar navbar-expand-lg ">
+  <div class="container">
+    <button class="navbar-toggler border border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+<i class="fa-solid fa-bars-staggered fs-2 "></i>    </button>
+    <div class="offcanvas offcanvas-end  "style="width: 75%;" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <div class="offcanvas-title fs-3 fw-bold m-auto mt-3" id="offcanvasNavbarLabel"><img src="./img/NMOLE LOGO.png" alt=""></div>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body position-relative d-flex-lg align-items-center justify-content-lg-between">
+        <ul class="navbar-nav mt-md-3 mt-lg-0 align-items-center">
+          <li class="nav-item ">
+            <a class="nav-link active me-3" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item mt-2 mt-lg-0">
+            <a class="nav-link me-3" href="#">About</a>
+          </li>
+           <li class="nav-item mt-2 mt-lg-0">
+            <a class="nav-link me-3" href="#">Events</a>
+          </li>
+          <li class="nav-item dropdown mt-2 mt-lg-0">
+            <a class="nav-link dropdown-toggle me-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Projects
+            </a>
+            <ul class="dropdown-menu border border-0">
+              <li><a class="dropdown-item mt-2" href="#">Chmeical Projects</a></li>
+              <li><a class="dropdown-item mt-2" href="#"> Mechanical Projects</a></li>
+            
+            </ul>
+          </li>
+           <li class="nav-item mt-2 mt-lg-0">
+            <a class="nav-link me-3" href="#">Committees</a>
+          </li>
+        </ul>
+        <div class="log position-absolute d-lg-flex "><div class="img"><img src="./img/NMOLE LOGO.png" alt=""></div></div>
+    <form class="d-lg-flex  mt-3 ">
+  <!--المشكله اللي موجوده هنا بسبب انه المودل بيختفثي مع الناف وطبعا بيتكرر المودل دا في كله ف بيختفي-->
+       <div class="modal fade btn-1 " id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 fw-bold " id="exampleModalToggleLabel"style="margin-left:40%;">Join Us</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+<form>
+      <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Full Name</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Id Number</label>
+    <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Department</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+    <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Phone Number</label>
+    <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label ">Committees</label>
+   <select class="form-select  mt-1" aria-label="Default select example">
+  <option value="1">Ac Chemical</option>
+  <option value="2">Ac mechinical</option>
+  <option value="3">pr</option>
+    <option value="4">oc</option>
+  <option value="5">media</option>
+    <option value="6">Hr</option>
+</select>
+  </div>
+
+ 
+    
+    <button type="submit" class="btn btn-primary d-flex justify-content mt-4">Submit</button>
+</form>     
+ </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Hide this modal and show the first with the button below.
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
+      </div>
+    </div>
+  </div>
+</div>
+<a class="btn-1 fw-bold" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Join Us</a></button>
+        </form>
+      </div>
+   
+  </div>
+</nav>
+ <!--end navbar-->
+<!--landing section-->
+<div class="lannding">
+    <div class="container">
+<div class="content d-flex justify-content-center ">
+<div class="text-1 text-center">
+  <h1 class="fw-bold " style="color: white;">New Means Of Learning <br> Engineering</h1>
+  <p class="col-10 m-auto" style="color: white;">Empowering students in engineering through practical projects and competitions.</p>
+  <div class="farm-inf d-flex flex-wrap align-items-center gap-4 justify-content-center mt-4">
+    <a href="#" class="btn-2 fw-bold" >Committees</a>
+    <div class="modal fade btn-1 " id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 fw-bold " id="exampleModalToggleLabel"style="margin-left:40%;">Join Us</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+<form>
+      <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Full Name</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Id Number</label>
+    <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Department</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+    <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Phone Number</label>
+    <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label ">Committees</label>
+   <select class="form-select  mt-1" aria-label="Default select example">
+  <option value="1">Ac Chemical</option>
+  <option value="2">Ac mechinical</option>
+  <option value="3">pr</option>
+    <option value="4">oc</option>
+  <option value="5">media</option>
+    <option value="6">Hr</option>
+</select>
+  </div>
+
+ 
+    
+    <button type="submit" class="btn btn-primary d-flex justify-content mt-4">Submit</button>
+</form>     
+ </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Hide this modal and show the first with the button below.
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
+      </div>
+    </div>
+  </div>
+</div>
+<a class="btn-1 fw-bold" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Join Us</a></button>
+       
+    </div>
+</div>
+</div>
+    </div>
+</div>
+<!--landing end -->
+<!--about us-->
+<div class="about-us">
+
+  <div class="gold d-flex justify-content-center align-items-center gap-4 ">
+<svg width="46" height="8" viewBox="0 0 46 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 4H43.2623" stroke="black" stroke-width="0.8"/>
+<path d="M43.2622 1L45.4999 4L43.2622 7" stroke="black" stroke-width="0.6"/>
+</svg>
+<h2 class="fw-bold" style="color: #345F7C;">About Us</h2>
+  </div>
+  . <div class="line" >
+  <svg width="1438" height="297" viewBox="0 0 1438 297" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 1C129 63 48.3 288.576 241.5 293.359C434.7 298.142 1004.67 295.352 1212.5 293.359C1391.5 221.5 1321.5 29 1438.5 1" stroke="black"></path>
+  </svg>
+</div>
+  <div class="container">
+    <div class="cont d-flex  flex-wrap align-items-center justify-content-center  mt-3">
+      <div class="imge col-lg-5">
+        <img src="./img/About-photo.jpg" alt="">
+      </div>
+     <div class="col-lg-5 col-12 txt-inf px-5 py-4 mt-4 mt-lg-0 ">
+<p >Lorem ipsum dolor sit amet consectetur. Posuere arcu pellentesque tincidunt nec hac tortor. At erat sed adipiscing platea interdum morbi pellentesque egestas ut.
+
+Lorem ipsum dolor sit amet</p><p class="mt-3 mb-4"> consectetur. Posuere arcu pellentesque tincidunt nec hac tortor. At erat sed adipiscing platea interdum morbi pellentesque egestas ut.</p>
+<a class="btn-3 " href="#" >Know More</a></div>
+    </div>
+  </div>
+</div>
+
+<!--committees-->
+  <hr>
+  <div class="committes">
+    <div class="text-center mt-5">
+    <div class="txt d-flex justify-content-center align-items-center gap-3">
+      <span >Our Committees</span> 
+      <svg class="mt-3" width="31" height="16" viewBox="0 0 31 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 1H28C28.5523 1 29 1.44772 29 2V13.381" stroke="black" stroke-width="0.8"/>
+<path d="M30.5 14L29 15L27.5 14" stroke="black" stroke-width="0.6"/>
+</svg>
+</div>
+    <h2 class="fw-bold  mt-3" style="color: #345F7C;">For Innovative Projects </h2>
+  </div>
+<div class="container ">
+ <div class=" d-flex justify-content-around mt-4">
+    <div class="col-lg-3 coulmn col-5  position-relative">
+      <div class="imges">
+         <img src="./img/chmeical.jpg" alt="" ></div>
+     <a href="#"> <div class="text d-block  position-absolute fs-5 text-center">
+        <p class="py-2  px-2 ">Chemical Committee</p>
+        <img src="./img/up-right-arrow.png" alt=""style="width: 30px;">
+      </div></a>
+     
+    </div>
+  <div class="col-lg-3 coulmn col-5 position-relative">
+      <div class="imges">
+         <img src="./img/chmeical.jpg" alt="" ></div>
+     <a href="#"> 
+      <div class="text d-block  position-absolute fs-5 text-center">
+        <p class="py-2 px-2 ">Mechanical Committee</p>
+        <img src="./img/right-arrow.png" alt=""style="width: 30px;">
+      </div></a>
+     
+    </div>
+  </div>
+  <div class="non-techinical  mt-5 ">
+<div class="gold d-flex justify-content-center align-items-center gap-lg-4 gap-2 ">
+<svg width="46" height="8" viewBox="0 0 46 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 4H43.2623" stroke="black" stroke-width="0.8"/>
+<path d="M43.2622 1L45.4999 4L43.2622 7" stroke="black" stroke-width="0.6"/>
+</svg>
+<h2 class="fw-bold" style="color: #345F7C;"> Non-Technical Committees</h2>
+  </div>
+    <div class=" d-flex flex-wrap justify-content-between gap-3 mt-5">
+    <div class="col-lg-2 coulmn col-4  position-relative">
+      <div class="imges">
+         <img src="./img/chmeical.jpg" alt="" ></div>
+     <a href="#"> <div class="text d-block  position-absolute fs-5 text-center">
+        <p class="py-2  px-2 ">Organization</p>
+        <img src="./img/up-right-arrow.png" alt=""style="width: 20px;">
+      </div></a>
+     
+    </div>
+  <div class="col-lg-2 coulmn col-4 position-relative">
+      <div class="imges">
+         <img src="./img/chmeical.jpg" alt="" ></div>
+     <a href="#"> 
+      <div class="text d-block  position-absolute fs-5 text-center">
+        <p class="py-2 px-2 ">Media</p>
+                <img src="./img/up-right-arrow.png" alt=""style="width: 20px;">
+
+      </div></a>
+     
+    </div>
+     <div class="col-lg-2 coulmn col-4 position-relative">
+      <div class="imges">
+         <img src="./img/chmeical.jpg" alt="" ></div>
+     <a href="#"> 
+      <div class="text d-block  position-absolute fs-5 text-center">
+        <p class="py-2">Human Resources</p>
+                <img src="./img/up-right-arrow.png" alt=""style="width: 20px;">
+
+      </div></a>
+     
+    </div>
+     <div class="col-lg-2 coulmn col-4 position-relative">
+      <div class="imges">
+         <img src="./img/chmeical.jpg" alt="" ></div>
+     <a href="#"> 
+      <div class="text d-block  position-absolute fs-5 text-center">
+        <p class="py-2 px-2 ">Public Relations</p>
+                <img src="./img/up-right-arrow.png" alt=""style="width: 20px;">
+
+      </div></a>
+     
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+  
+<!--Join-us-->
+<div class="Join-us">
+  <div class="container">
+    <div class="text-inforation  d-flex">
+      <div class="col-12  ms-lg-5 ms-sm-0">
+        <h2 class="fw-bold">Join Us</h2>
+        <p class="mb-4 fs-6">Lorem ipsum dolor sit amet consectetur. Posuere arcu pellentesque <br> tincidunt nec hac tortor. </p>
+           <div class="modal fade btn-1 " id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 fw-bold " id="exampleModalToggleLabel"style="margin-left:40%;">Join Us</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+<form>
+      <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Full Name</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Id Number</label>
+    <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Department</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+    <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Phone Number</label>
+    <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label ">Committees</label>
+   <select class="form-select  mt-1" aria-label="Default select example">
+  <option value="1">Ac Chemical</option>
+  <option value="2">Ac mechinical</option>
+  <option value="3">pr</option>
+    <option value="4">oc</option>
+  <option value="5">media</option>
+    <option value="6">Hr</option>
+</select>
+  </div>
+
+ 
+    
+    <button type="submit" class="btn btn-primary d-flex justify-content mt-4">Submit</button>
+</form>     
+ </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Hide this modal and show the first with the button below.
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
+      </div>
+    </div>
+  </div>
+</div>
+<a class="btn-1 btn-join" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Join Us</a></button>
+      </div>       
+    </div>
+  </div>
+</div>
+<!--Why Join us-->
+<div class="Why-Join-us">
+  <div class="box-join d-flex justify-content-center position-relative" >
+   <svg width="301" height="110" viewBox="0 0 301 110" fill="none" xmlns="http://www.w3.org/2000/svg" class="position-absolute mb-2" style="margin-top: -31px;">
+<path d="M118.407 103.687C73.3909 113.431 -12.74 116.565 2.86563 51.1486C22.3726 -30.6214 275.236 4.22694 295.5 38.0002C306 55.5003 294.169 88.7828 287 98.0001" stroke="#CD712A" stroke-width="0.8"/>
+</svg>
+  <h2 class="fw-bold" style="color: #345F7C;">Why Join Us</h2>
+</div>
+  <div class="container">
+    <div class="row justify-content-center mt-5 ">
+    <div class="col-4  d-flex flex-column  align-items-center position-relative">
+    <div class="counter fw-bold fs-3" data-target="340"style="position: absolute;top: 30%;">000</div>
+<!--svg img-->
+      <svg width="177" height="169" viewBox="0 0 177 169" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M176.426 111.241C178.935 126.286 173.219 136.943 159.278 143.212C145.337 149.481 132.581 155.192 121.01 160.347C109.438 165.501 96.8913 168.357 83.3683 168.914C69.8454 169.472 55.7648 167.312 41.1265 162.436C26.4883 157.561 15.6838 148.018 8.71325 133.809C1.74265 119.599 -1.04559 104.763 0.34853 89.2997C1.74265 73.8366 8.1556 61.4381 19.5874 52.1045C31.0192 42.7709 41.0568 32.671 49.7004 21.805C58.3439 10.939 69.7757 4.1129 83.9957 1.32674C98.2157 -1.45942 111.948 0.142625 125.192 6.13287C138.436 12.1231 150.774 19.9244 162.206 29.5366C173.638 39.1489 178.238 51.408 176.008 66.3139C173.777 81.2199 173.916 96.1955 176.426 111.241Z" fill="url(#paint0_radial_145_17)"/>
+<defs>
+<radialGradient id="paint0_radial_145_17" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(88.5 84.5) rotate(90) scale(84.5 88.5)">
+<stop stop-color="#A8C6E5"/>
+<stop offset="0.269231" stop-color="#96B9DD"/>
+<stop offset="0.509615" stop-color="#7EA6D1"/>
+<stop offset="0.913462" stop-color="#6695C5"/>
+</radialGradient>
+</defs>
+</svg>
+    <h3 class="mb-3 fs-6 mt-4 fw-bold">Member</h3>
+
+    </div>
+ <div class="row justify-content-around mt-5 gap-2">
+    <div class="col-4  d-flex flex-column  align-items-center position-relative">
+       <h3 class="mb-3 fs-6 mx-auto fw-bold">Event Held</h3>
+    <div class="counter fw-bold fs-3" data-target="200"style="position: absolute;top: 50%;">000</div>
+
+      <!--svg img-->
+      <svg width="177" height="169" viewBox="0 0 177 169" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M176.426 111.241C178.935 126.286 173.219 136.943 159.278 143.212C145.337 149.481 132.581 155.192 121.01 160.347C109.438 165.501 96.8913 168.357 83.3683 168.914C69.8454 169.472 55.7648 167.312 41.1265 162.436C26.4883 157.561 15.6838 148.018 8.71325 133.809C1.74265 119.599 -1.04559 104.763 0.34853 89.2997C1.74265 73.8366 8.1556 61.4381 19.5874 52.1045C31.0192 42.7709 41.0568 32.671 49.7004 21.805C58.3439 10.939 69.7757 4.1129 83.9957 1.32674C98.2157 -1.45942 111.948 0.142625 125.192 6.13287C138.436 12.1231 150.774 19.9244 162.206 29.5366C173.638 39.1489 178.238 51.408 176.008 66.3139C173.777 81.2199 173.916 96.1955 176.426 111.241Z" fill="url(#paint0_radial_145_17)"/>
+<defs>
+<radialGradient id="paint0_radial_145_17" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(88.5 84.5) rotate(90) scale(84.5 88.5)">
+<stop stop-color="#A8C6E5"/>
+<stop offset="0.269231" stop-color="#96B9DD"/>
+<stop offset="0.509615" stop-color="#7EA6D1"/>
+<stop offset="0.913462" stop-color="#6695C5"/>
+</radialGradient>
+</defs>
+</svg>
+    </div>
+    <div class="col-4  d-flex flex-column  align-items-center position-relative">
+                   <h3 class="mb-3 fs-6 mx-auto fw-bold">WorksShops</h3>
+    <div class="counter fw-bold fs-3" data-target="238"style="position: absolute;top: 50%;">000</div>
+
+      <!--svg img-->
+      <svg width="177" height="169" viewBox="0 0 177 169" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M176.426 111.241C178.935 126.286 173.219 136.943 159.278 143.212C145.337 149.481 132.581 155.192 121.01 160.347C109.438 165.501 96.8913 168.357 83.3683 168.914C69.8454 169.472 55.7648 167.312 41.1265 162.436C26.4883 157.561 15.6838 148.018 8.71325 133.809C1.74265 119.599 -1.04559 104.763 0.34853 89.2997C1.74265 73.8366 8.1556 61.4381 19.5874 52.1045C31.0192 42.7709 41.0568 32.671 49.7004 21.805C58.3439 10.939 69.7757 4.1129 83.9957 1.32674C98.2157 -1.45942 111.948 0.142625 125.192 6.13287C138.436 12.1231 150.774 19.9244 162.206 29.5366C173.638 39.1489 178.238 51.408 176.008 66.3139C173.777 81.2199 173.916 96.1955 176.426 111.241Z" fill="url(#paint0_radial_145_17)"/>
+<defs>
+<radialGradient id="paint0_radial_145_17" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(88.5 84.5) rotate(90) scale(84.5 88.5)">
+<stop stop-color="#A8C6E5"/>
+<stop offset="0.269231" stop-color="#96B9DD"/>
+<stop offset="0.509615" stop-color="#7EA6D1"/>
+<stop offset="0.913462" stop-color="#6695C5"/>
+</radialGradient>
+</defs>
+</svg>
+    </div>
+  </div>
+    </div>
+</div>
+</div>
+    </div>
+  </div>
+  <!--js of why-Join-us-->
+  <script>const counters = document.querySelectorAll('.counter');
+
+        counters.forEach(counter => {
+            const target = +counter.getAttribute('data-target');
+            let count = 0;
+            const speed = 1000; // Duration of the animation in milliseconds
+
+            const increment = target / speed * 12; // Calculate increment value
+
+            const updateCounter = () => {
+                count += increment;
+                if (count < target) {
+                    counter.innerText = Math.ceil(count);
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    counter.innerText = target; // Ensure it ends at the target
+                }
+            };
+
+            updateCounter();
+        });</script>
+<!--end of why-Join-us-->
+<!--Testimonial-->
+<div class="Testimonial">
+  <div class="gold d-flex justify-content-center align-items-center gap-4 ">
+<svg width="46" height="8" viewBox="0 0 46 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 4H43.2623" stroke="black" stroke-width="0.8"/>
+<path d="M43.2622 1L45.4999 4L43.2622 7" stroke="black" stroke-width="0.6"/>
+</svg>
+<h2 class="fw-bold" style="color: #345F7C;">Testimonials</h2>
+  </div>
+  <p class="fs-7 text-center"style="margin-left:6%">See what others say about N MOLE.</p>
+  <div class="container">
+  <div class="swiper mySwiper ">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"> 
+        <div class="card swiper-slide p-3 ">
+        <div class="img d-flex justify-content-between align-items-center"> 
+    <div class="imges d-flex align-items-center ">
+      <img src="./img/avatar.png" alt="">
+       <h6 class="ms-2 fw-bold">John Doe</h6>
+    </div>
+    <div class="icon d-flex gap-1">
+<img src="./img/star.png" alt="">
+<img src="./img/star.png" alt="">
+<img src="./img/star.png" alt="">
+<img src="./img/star.png" alt="">
+<img src="./img/star.png" alt="">
+
+    </div>
+    </div>
+    <p class="py-3">Lorem ipsum dolor sit, amet consectetur
+       adipisicing elit Tempore aut illo officia  </p>    
+          </div>
+        </div>
+      <div class="swiper-slide"> 
+         <div class="card swiper-slide p-3 ">
+        <div class="img d-flex justify-content-between align-items-center"> 
+    <div class="imges d-flex align-items-center ">
+      <img src="./img/avatar.png" alt="">
+       <h6 class="ms-2 fw-bold">John Doe</h6>
+    </div>
+    <div class="icon d-flex gap-1">
+<img src="./img/star.png" alt="">
+<img src="./img/star.png" alt="">
+<img src="./img/star.png" alt="">
+<img src="./img/star.png" alt="">
+<img src="./img/star.png" alt="">
+
+    </div>
+    </div>
+    <p class="py-3">Lorem ipsum dolor sit, amet consectetur
+       adipisicing elit Tempore aut illo officia  </p>    
+          </div>
+        </div>
+      <div class="swiper-slide"> 
+        <div class="card swiper-slide p-3 ">
+        <div class="img d-flex justify-content-between align-items-center"> 
+    <div class="imges d-flex align-items-center ">
+      <img src="./img/avatar.png" alt="">
+       <h6 class="ms-2 fw-bold">John Doe</h6>
+    </div>
+    <div class="icon d-flex gap-1">
+<img src="./img/star.png" alt="">
+<img src="./img/star.png" alt="">
+<img src="./img/star.png" alt="">
+<img src="./img/star.png" alt="">
+<img src="./img/star.png" alt="">
+
+    </div>
+    </div>
+    <p class="py-3">Lorem ipsum dolor sit, amet consectetur
+       adipisicing elit Tempore aut illo officia  </p>    
+          </div>
+        </div>
+      <div class="swiper-slide"> 
+       <div class="card swiper-slide p-3 ">
+        <div class="img d-flex justify-content-between align-items-center"> 
+    <div class="imges d-flex align-items-center ">
+      <img src="./img/avatar.png" alt="">
+       <h6 class="ms-2 fw-bold">John Doe</h6>
+    </div>
+    <div class="icon d-flex gap-1">
+<img src="./img/star.png" alt="">
+<img src="./img/star.png" alt="">
+<img src="./img/star.png" alt="">
+<img src="./img/star.png" alt="">
+<img src="./img/star.png" alt="">
+
+    </div>
+    </div>
+    <p class="py-3">Lorem ipsum dolor sit, amet consectetur
+       adipisicing elit Tempore aut illo officia  </p>    
+          </div>
+        </div>
+      <div class="swiper-slide"> 
+       <div class="card swiper-slide p-3 ">
+        <div class="img d-flex justify-content-between align-items-center"> 
+    <div class="imges d-flex align-items-center ">
+      <img src="./img/avatar.png" alt="">
+       <h6 class="ms-2 fw-bold">John Doe</h6>
+    </div>
+    <div class="icon d-flex gap-1">
+<img src="./img/star.png" alt="">
+<img src="./img/star.png" alt="">
+<img src="./img/star.png" alt="">
+<img src="./img/star.png" alt="">
+<img src="./img/star.png" alt="">
+
+    </div>
+    </div>
+    <p class="py-3">Lorem ipsum dolor sit, amet consectetur
+       adipisicing elit Tempore aut illo officia  </p>    
+          </div>
+        </div>
+      <div class="swiper-slide"> 
+        <div class="card swiper-slide p-3 ">
+        <div class="img d-flex justify-content-between align-items-center"> 
+    <div class="imges d-flex align-items-center ">
+      <img src="./img/avatar.png" alt="">
+       <h6 class="ms-2 fw-bold">John Doe</h6>
+    </div>
+    <div class="icon d-flex gap-1">
+<img src="./img/star.png" alt="">
+<img src="./img/star.png" alt="">
+<img src="./img/star.png" alt="">
+<img src="./img/star.png" alt="">
+<img src="./img/star.png" alt="">
+
+    </div>
+    </div>
+    <p class="py-3">Lorem ipsum dolor sit, amet consectetur
+       adipisicing elit Tempore aut illo officia  </p>    
+          </div>
+        </div>
+      <div class="swiper-slide">
+      <div class="card swiper-slide p-3 ">
+        <div class="img d-flex justify-content-between align-items-center"> 
+    <div class="imges d-flex align-items-center ">
+      <img src="./img/avatar.png" alt="">
+       <h6 class="ms-2 fw-bold">John Doe</h6>
+    </div>
+    <div class="icon d-flex gap-1">
+<img src="./img/star.png" alt="">
+<img src="./img/star.png" alt="">
+<img src="./img/star.png" alt="">
+<img src="./img/star.png" alt="">
+<img src="./img/star.png" alt="">
+
+    </div>
+    </div>
+    <p class="py-3">Lorem ipsum dolor sit, amet consectetur
+       adipisicing elit Tempore aut illo officia  </p>    
+          </div>
+        </div>
+  
+    </div>
+    <div class="swip">
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev" ></div>
+    </div>
+    <div class="swiper-pagination d-none"></div>
+  </div>
+  </div>
+  <hr>
+</div>
+<!--js of testmonials-->
+        <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+      // When the viewport is less than 767px
+      767: {
+        slidesPerView: 1,
+      },
+      // When the viewport is between 767x and 992px
+      992: {
+        slidesPerView: 2,
+      },
+      // When the viewport is 1200px or larger
+      1200: {
+        slidesPerView: 3,
+      },
+    },
+    });
+  </script>
+<!--end of testmonials-->
+<!--Featured Projects-->
+<div class="Featured-Projects">
+    <div class="gold d-flex justify-content-center align-items-center gap-4 ">
+<svg width="46" height="8" viewBox="0 0 46 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 4H43.2623" stroke="black" stroke-width="0.8"/>
+<path d="M43.2622 1L45.4999 4L43.2622 7" stroke="black" stroke-width="0.6"/>
+</svg>
+<h2 class="fw-bold" style="color: #345F7C;">Featured Projects</h2>
+  </div>
+  <div class="container">
+    <div class="d-flex flex-wrap  justify-content-lg-between justify-content-start align-items-center  mt-5">
+      <div class="col-4 position-relative  ">
+<div class="box1 images"><img src="./img/Distillation.jpg" alt="" ></div>
+<div class="box2 images"><img src="./img/Distillation.jpg" alt="" ></div>
+<div class="box3 images"><img src="./img/Distillation.jpg" alt="" ></div>
+
+      </div>
+   <div class="col-lg-5 col-10 ">
+    <h4 class="mb-3">Lorem Ipsum</h4>
+<p class="mb-3">Lorem ipsum dolor sit amet consectetur. Posuere arcu pellentesque tincidunt nec hac tortor. At erat sed adipiscing platea interdum morbi pellentesque egestas ut</p>
+<p >Lorem ipsum dolor sit amet consectetur. Posuere arcu pellentesque tincidunt nec hac tortor. At erat sed adipiscing platea interdum morbi pellentesque egestas ut...</p>
+<div class="d-flex justify-content-between">
+  <a href="#" class="mt-2 more">See More</a>
+<a  class="btn-3 mt-5 " href="#">Chemical Projects</a>
+</div>
+</div>
+
+    </div>
+        <div class="row-2 d-flex flex-wrap  justify-content-lg-between justify-content-start align-items-center ">
+        <div class="col-lg-5 col-10 ">
+    <h4 class="mb-3">Lorem Ipsum</h4>
+<p class="mb-3">Lorem ipsum dolor sit amet consectetur. Posuere arcu pellentesque tincidunt nec hac tortor. At erat sed adipiscing platea interdum morbi pellentesque egestas ut</p>
+<p >Lorem ipsum dolor sit amet consectetur. Posuere arcu pellentesque tincidunt nec hac tortor. At erat sed adipiscing platea interdum morbi pellentesque egestas ut...</p>
+<div class="d-flex justify-content-between">
+  <a href="#" class="mt-2 more">See More</a>
+<a  class="btn-3 mt-5 " href="#">Chemical Projects</a>
+</div>
+
+</div>
+
+          <div class="col-4 position-relative  ">
+<div class="box1 images"><img src="./img/Distillation.jpg" alt="" ></div>
+<div class="box2 images"><img src="./img/Distillation.jpg" alt="" ></div>
+<div class="box3 images"><img src="./img/Distillation.jpg" alt="" ></div>
+      </div>
+    </div>
+  </div>
+</div>
+ <!--MIR Competition-->
+ <div class="MIR-Competition">
+  <div class="container">
+<div class="d-flex  align-items-center">
+  <div class="d-flex align-items-center">
+<div class="imges  rounded-circle"><img src="./img/photo_٢٠٢٥-٠٦-٢٧_٠٤-٣٩-١٤.jpg" alt="" class="rounded-circle "></div>
+<div class="box-area d-flex flex-wrap justify-content-between align-items-center col-lg-12 col-10 ">
+<div class="box-text ms-4 d-block ">
+  <h5 class="fw-bold">MIR Competition</h5>
+  <p class="mt-2">Experience the pinnacle of engineering creativity in our annual Make It Real competition.</p>
+</div>
+  <div class="buttom">
+    <a href="#" class="btn-1 btn-join px-5 ms-4 ms-lg-0" style="background-color: #345F7C; padding: 12px 0;">Learn More</a>
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+ </div>
+ <!--Upcoming Events-->
+ <div class="Upcoming-Events">
+  <div class="container">
+    <div class="compent d-flex flex-wrap  justify-content-lg-between justify-content-center align-items-center">
+      <div class="col-lg-4 col-12">
+          <div class="gold d-flex justify-content-center align-items-center gap-4 ">
+<svg width="46" height="8" viewBox="0 0 46 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.9">
+<path d="M0 4H43.2623" stroke="#CD712A" stroke-width="0.9"/>
+<path d="M43.2622 1L45.4999 4L43.2622 7" stroke="#CD712A" stroke-width="0.6"/>
+</g>
+</svg>
+<h2 class="fw-bold" style="color: #345F7C;">Upcoming Events</h2>
+  </div>
+</div>     
+<div class="col-lg-4 col-11  mt-5 mt-lg-0">
+<div class="cont d-flex justify-content-between gap-3 gap-lg-0">
+<div class="box">
+  <div class="icon mx-auto" style="z-index: -1;"><img src="./img/calendar.png" alt="" style="width: 50px; margin-top: 10px;"></div>
+  <div class="text mt-4 ">
+    <h5 >Event Title</h5>
+    <span>Date: XX/XX/XXXX</span>
+  </div>
+  <div class="location mb-3 mt-3  fs-5">
+    Location: Venue
+  </div>
+</div>
+<div class="box">
+  <div class="icon mx-auto" style="z-index: -1;"><img src="./img/note.png" alt=""style="width: 50px; margin-top: 10px;"></div>
+  <div class="text mt-4 ">
+    <h5 >Event Title</h5>
+    <span>Date: XX/XX/XXXX</span>
+  </div>
+  <div class="location mb-3 mt-3  fs-5">
+    Location: Venue
+  </div>
+</div>
+</div>
+<div class="d-flex justify-content-center mt-4"><a class="btn-3 " href="#">Check All Events</a>
+</div>
+
+</div>
+    </div>
+  </div>
+ </div>
+ <!--Footer-->
+ <div class="Footer">
+  <div class="container">
+
+  </div>
+ </div>
+</body>
+</html>
+
+
+
