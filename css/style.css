@@ -90,7 +90,6 @@ a {
         width: 1170px;
     }
 }
-
 /*navbar*/
 nav.navbar{padding-bottom: 26px;
 padding-top: 26px;}
@@ -104,12 +103,13 @@ height: 78px;
 a.btn-1{ background-color: var(---btn-color);
 color: white; border-radius: 8px; border: none; padding: 8px 37px;}
 @media (max-width: 992px) {
- .navbar .offcanvas-body  a.btn-1,.navbar .offcanvas-body .log{display: none;}
  .navbar .offcanvas-body ul.navbar-nav {display: flex; justify-content: center;}
-.modal{display: block;}
-
-
 }
+@media (max-width: 767px) {
+ .navbar .offcanvas-body #offcanvasNavbar {text-align: center;}
+}
+
+/*end navbar*/
 /*end navbar*/
 /*lannding*/
 .lannding{
