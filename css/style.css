@@ -90,6 +90,7 @@ a {
         width: 1170px;
     }
 }
+
 /*navbar*/
 nav.navbar{padding-bottom: 26px;
 padding-top: 26px;}
@@ -106,10 +107,8 @@ color: white; border-radius: 8px; border: none; padding: 8px 37px;}
  .navbar .offcanvas-body ul.navbar-nav {display: flex; justify-content: center;}
 }
 @media (max-width: 767px) {
- .navbar .offcanvas-body #offcanvasNavbar {text-align: center;}
 }
 
-/*end navbar*/
 /*end navbar*/
 /*lannding*/
 .lannding{
@@ -152,8 +151,7 @@ z-index: -1;
 width: 100%;
 top: -2%; 
 }
-.about-us .cont .imge img{/*width: 487px;
-height: 442;*/ width: 100%;}
+.about-us .cont .imge img{ width: 100%;}
 .about-us .cont .txt-inf{background-color: #F0F4FF;
 margin-left: -40px;}
 .about-us .cont .txt-inf p{font-size: 14px;line-height: 1.4;}
@@ -165,8 +163,14 @@ margin-left: -40px;}
     border-radius: 8px;
 }
 @media (max-width: 767px) {
-   .about-us .cont .txt-inf{margin: auto; margin-left: 0px;}  
-}
+   .about-us .cont .txt-inf{margin: auto; margin-left: 0px;}
+   .about-us .cont .txt-inf p{font-size: 13px;line-height: 1.6;}
+   .about-us .line svg{height: 300px ;
+z-index: -1; 
+width: 100%;
+top: -2%; 
+
+}}
 
 /*end About-us*/
 /*Committees*/
@@ -174,13 +178,24 @@ margin-left: -40px;}
   .committes  .imges{max-height: 350px; max-width: 250px;}
   .committes  .imges img{width: 100%; border-radius: 350px;}
     .committes .coulmn a{color: black;}
-  .committes .coulmn .text{left: 8%;
+  .committes .coulmn .text{left: 9%;
   bottom: 20%;}
+  
   .committes .coulmn .text p {background-color: rgba(255, 255, 255, 0.67);}
-@media (max-width: 767px) {
-   .committes .non-techinical .coulmn .text{left:10%;
-  bottom: 20%;} 
+
+  @media (max-width: 767px) {
+   .committes .non-techinical .coulmn .text{left: -2%;
+    bottom: 10%;} 
+     .committes .non-techinical .coulmn   .media{left: -22%;} 
+  .committes .coulmn .text p{font-size: 14px;}
 }
+
+/*@media (max-width: 992px) {
+   .committes .non-techinical .coulmn .text{left: 14%;
+    bottom: 20%;} 
+     .committes .non-techinical .coulmn   .media{left: 12%;} 
+  .committes .coulmn .text p{font-size: 16px;}
+}*/
 /*Join-us*/
 .Join-us{
     padding-top: 40px;
@@ -204,7 +219,11 @@ margin-left: -40px;}
 left: 22%;
 bottom: -60%;}
 .Why-Join-us .cont  .svg  .num .counter{font-weight: bold; font-size: 30px;}
+@media (max-width: 767px) {
+    .Why-Join-us .col-4 svg{width: 140px;}
 
+    
+}
 /*Testimonials*/
 .Testimonial{
        padding-top: 40px;
@@ -240,10 +259,19 @@ position: relative;}
   z-index: 1;}
 .Featured-Projects .row-2{margin-top: 12%;}
 .Featured-Projects .col-lg-5{margin-top: 10%}
+
 @media (max-width: 992px) {
     .Featured-Projects .col-lg-5{margin-top: 20%}
 .Featured-Projects .row-2 .col-4{margin-top: 10%; }
+ .Featured-Projects .col-4  { margin: auto;}
 }
+@media (max-width: 767px) {
+.Featured-Projects .col-4 img{width: 55%;
+    height: 85%; }
+     .Featured-Projects .col-4 { margin: 0;}
+     .Featured-Projects .col-lg-5 p{font-size: 14px;}
+    }
+
 a.more{text-decoration: none; color: rgba(0, 0, 0, 0.62);}
  .Featured-Projects a.btn-3{
     color: #ffff;
@@ -259,6 +287,11 @@ a.more{text-decoration: none; color: rgba(0, 0, 0, 0.62);}
     background-color: var(---background-accent);
 }
 .MIR-Competition .imges img{width: 100px; height: 100px;}
+@media (max-width: 767px) {
+    .MIR-Competition  .box-area{margin: auto; margin-top: 20px;}
+.MIR-Competition  .box-area .box-text{font-size: 12px;}
+   .MIR-Competition  .mir{text-align: center;}
+.MIR-Competition  .box-area .buttom{margin: auto;} }
 /*Upcoming Events*/
 .Upcoming-Events{
     padding-top: var(---padding-section-top);
