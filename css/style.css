@@ -92,8 +92,10 @@ a {
 }
 
 /*navbar*/
-nav.navbar{padding-bottom: 26px;
-padding-top: 26px;}
+nav.navbar{padding:26px 0;}
+@media (max-width: 992px) {
+ nav.navbar{padding: 12px 0;}}  
+
 .navbar .offcanvas-body ul.navbar-nav li a {color :black}
 .navbar .offcanvas-body ul.avbar-nav{display: flex; justify-content: start;} 
 .navbar .offcanvas-body .log{left: 50%;}
@@ -134,9 +136,11 @@ z-index: -1;}
     padding: 8px 46px;
     color: white;
 }
+.lannding .content .text-1 p{color: white;}
 @media (max-width: 767px) {
    .lannding .content .farm-inf a.btn-2{ padding: 8px 18px;}
-}
+/*.lannding .content .text-1 h1{font-size: 25px;}*/
+.lannding .content .text-1 p{font-size: 13px; color: #f7f7f7d6;} }
 
 /*landing end*/
 /*about us*/
@@ -174,7 +178,7 @@ top: -2%;
 
 /*end About-us*/
 /*Committees*/
-  .committes{padding-top: 120px;padding-bottom: 120px;}
+  .committes{padding-top: 60px;padding-bottom: var(---padding-section-bottom);}
   .committes  .imges{max-height: 350px; max-width: 250px;}
   .committes  .imges img{width: 100%; border-radius: 350px;}
     .committes .coulmn a{color: black;}
@@ -285,13 +289,12 @@ a.more{text-decoration: none; color: rgba(0, 0, 0, 0.62);}
     background-color: var(---background-accent);
 }
 .MIR-Competition .imges img{width: 100px; height: 100px;}
-.MIR-Competition  .box-area .buttom .btn-join{padding: 15px 0;}
-
+.MIR-Competition  .box-area .buttom .btn-join{padding: 12px 0;}
 @media (max-width: 767px) {
     .MIR-Competition  .box-area{margin: auto; margin-top: 20px;}
 .MIR-Competition  .box-area .box-text{font-size: 12px;}
    .MIR-Competition  .mir{text-align: center;}
-.MIR-Competition  .box-area .buttom{margin: auto;} }
+.MIR-Competition  .box-area .buttom{margin: auto; } }
 /*Upcoming Events*/
 .Upcoming-Events{
     padding-top: var(---padding-section-top);
@@ -311,4 +314,4 @@ a.more{text-decoration: none; color: rgba(0, 0, 0, 0.62);}
  .Upcoming-Events .cont .box .text{
     font-size: 12px;
  } 
- .Upcoming-Events .cont .box  .location{font-size: 13px;}}
+ .Upcoming-Events .cont .box  .location{font-size: 14px;}}
