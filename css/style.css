@@ -289,7 +289,6 @@ a.more{text-decoration: none; color: rgba(0, 0, 0, 0.62);}
     .MIR-Competition  .box-area{margin: auto; margin-top: 20px;}
 .MIR-Competition  .box-area .box-text{font-size: 12px;}
    .MIR-Competition  .mir{text-align: center;}
-       .MIR-Competition  .box-area p{margin-bottom: 15px;}
 .MIR-Competition  .box-area .buttom{margin: auto;} }
 /*Upcoming Events*/
 .Upcoming-Events{
@@ -310,4 +309,4 @@ a.more{text-decoration: none; color: rgba(0, 0, 0, 0.62);}
  .Upcoming-Events .cont .box .text{
     font-size: 12px;
  } 
- .Upcoming-Events .cont .box  .location{font-size: 14px;}}
+ .Upcoming-Events .cont .box  .location{font-size: 13px;}}
