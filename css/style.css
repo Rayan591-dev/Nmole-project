@@ -221,8 +221,6 @@ bottom: -60%;}
 .Why-Join-us .cont  .svg  .num .counter{font-weight: bold; font-size: 30px;}
 @media (max-width: 767px) {
     .Why-Join-us .col-4 svg{width: 140px;}
-
-    
 }
 /*Testimonials*/
 .Testimonial{
@@ -237,7 +235,7 @@ position: relative;}
   .swiper .swip .swiper-button-next ,.swiper-button-prev:hover{
   color: black;}
 .swiper .card .imges img {width: 30px; position: relative;}
-.card {max-height: 150px; width:100%; background-color: #00000010; border: none; border-radius: 6px; } 
+.card {max-height: 150px; width:100%; background-color:#00000010 ; border: none; border-radius: 6px; } 
 .swiper .icon img {width: 15px; height: 15px;  }
 
 /*Featured Projects*/
@@ -291,7 +289,7 @@ a.more{text-decoration: none; color: rgba(0, 0, 0, 0.62);}
     .MIR-Competition  .box-area{margin: auto; margin-top: 20px;}
 .MIR-Competition  .box-area .box-text{font-size: 12px;}
    .MIR-Competition  .mir{text-align: center;}
-.MIR-Competition  .box-area .buttom{margin: auto;} }
+.MIR-Competition  .box-area .buttom{margin: auto; margin-top: 15PX;} }
 /*Upcoming Events*/
 .Upcoming-Events{
     padding-top: var(---padding-section-top);
@@ -305,5 +303,10 @@ a.more{text-decoration: none; color: rgba(0, 0, 0, 0.62);}
     font-weight: 500;
     padding: 10px 37px;
     background-color: #345F7C;
-    border-radius: 8px;
-}
+    border-radius: 8px;}
+     .Upcoming-Events .cont .box  .location {font-size: 20px; font-weight: 500;}
+@media (max-width: 767px) {
+ .Upcoming-Events .cont .box .text{
+    font-size: 13px;
+ } 
+ .Upcoming-Events .cont .box  .location{font-size: 16px;}}
