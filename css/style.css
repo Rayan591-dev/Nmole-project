@@ -285,6 +285,8 @@ a.more{text-decoration: none; color: rgba(0, 0, 0, 0.62);}
     background-color: var(---background-accent);
 }
 .MIR-Competition .imges img{width: 100px; height: 100px;}
+.MIR-Competition  .box-area .buttom .btn-join{padding: 15px 0;}
+
 @media (max-width: 767px) {
     .MIR-Competition  .box-area{margin: auto; margin-top: 20px;}
 .MIR-Competition  .box-area .box-text{font-size: 12px;}
