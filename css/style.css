@@ -206,11 +206,11 @@ top: -2%;
     padding-bottom: 40px;
     background-color: var(---background-accent);
 }
-.Join-us .btn-join{margin-left: 24%; padding: 12px 80px;}
+.Join-us .text-inforation p{font-size: 16px;}
+.Join-us .btn-join{ padding: 12px 80px; width: fit-content;}
 @media (max-width: 767px) {
-    .Join-us .btn-join{margin-left: 50%; padding: 12px 60px;}
-
-    
+    .Join-us .btn-join{ padding: 10px 40px;}
+.Join-us .text-inforation p{font-size: 13px; color: #404040c9;;}
 }
 /*Why-Join-us*/
 .Why-Join-us{
@@ -238,10 +238,13 @@ position: relative;}
   top: 74%; color: rgba(0, 0, 0, 0.647);}
   .swiper .swip .swiper-button-next ,.swiper-button-prev:hover{
   color: black;}
-.swiper .card .imges img {width: 30px; position: relative;}
+.swiper .card .imges img {width: 45px; position: relative;}
+.swiper .card  p{font-size: 14px;}
 .card {max-height: 150px; width:100%; background-color:#00000010 ; border: none; border-radius: 6px; } 
-.swiper .icon img {width: 15px; height: 15px;  }
+.swiper .icon img {width: 16px; height: 16px;  }
+@media (max-width: 767px) {
 
+    }
 /*Featured Projects*/
 .Featured-Projects{
 
